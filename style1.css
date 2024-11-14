@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0%;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #333;
+}
+
+.portfolio-item {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Basic styling for slideshow container */
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Style each slide */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: slideAnimation 25s infinite;
+}
+
+/* Add timing to each slide for staggered display */
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+.slide:nth-child(2) {
+    animation-delay: 5s;
+}
+.slide:nth-child(3) {
+    animation-delay: 10s;
+}
+.slide:nth-child(4) {
+    animation-delay: 15s;
+}
+.slide:nth-child(5) {
+    animation-delay: 20s;
+}
+
+/* Animation keyframes for fading in and out */
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Style for images */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info span {
+    color: orange;
+}
+
+.info {
+    h3{
+        background-color: grey;
+    }
+    p{
+        background-color: gray;
+    }
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+  .slideshow:hover .overlay {
+    transform: scale(1);
+  }
+
+  nav {
+    display: flex; /* Use flexbox for layout */
+    /* Align items vertically centered */
+    justify-content: space-between; /* Optional: space out items */
+    padding: 10px;
+    gap: 10%; /* Add some padding */
+}
+
+.logo img {
+    max-height: 50px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+ul {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display list items in a row */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+ul li {
+    margin-left: 45px; /* Add space between items */
+}
+
+ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Set link color */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+
+  
